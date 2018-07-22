@@ -1,0 +1,66 @@
+.tituloRegistro h3{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 40.9%;
+
+}
+
+
+main .colupna1{
+    margin-top: 40px;
+    width: 25%;
+    margin-left: 22%;
+    float: left;
+    /* margin-right: %; */
+
+ }
+
+
+main .colupna1 input{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block; 
+    width: 100%;
+
+} 
+
+
+main .colupna2{
+    margin-top: 40px;
+    margin-right: 20%;
+    float: right;
+    width: 25%;
+}
+
+main .colupna2 select{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+   
+    
+}
+
+.imgPokemon{
+    width: 65%;
+    height: 90px;
+    margin: 10px 0px 0px 1%;;
+}  
+
+.imgP {
+    margin-left: 3.5%;
+    background-color: #333333;
+    border-radius: 3px;
+    border: none;
+    padding: 2px 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+
+.btnRegistro{
+    text-align: center;
+    margin-left: 47%;
+    margin-top: 15px;
+}
