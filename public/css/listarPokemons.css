@@ -4,3 +4,31 @@
     margin-left: 43%;
 
 }
+
+.image{
+    width: 40%;
+    height: 100px;
+}
+
+.tabla{
+ width: 75%;
+ margin-left: 10%
+
+}
+
+th , td {
+    width: 3%;
+    height: 26px;
+    border-bottom: 1px solid #333333;
+    padding-top: 7px;
+    text-align: center;
+    
+
+}
+
+th {
+    font-weight: 500;
+    font-size: 1.035em;
+    text-align: center;
+    
+}
