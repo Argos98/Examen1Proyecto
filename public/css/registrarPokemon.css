@@ -1,9 +1,70 @@
 .imgPokemon{
-    width: 20%;
-    height: 190px;
-    margin: 20px 0px 0px 1%;;
+    width: 65%;
+    height: 90px;
+    margin: 10px 0px 0px 1%;;
 }
 
 .frmRegistrarPokemon{
-    margin-top: 50px;
+    margin-top:20px;
+ margin-left: 12.5%;
+    /* background: #EAEDED; */
+    width: 100%;
+
+    
+}
+
+.tituloRegistro h3{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 40.9%;
+
+}
+
+main .colupna1{
+    margin-top: 40px;
+    width: 25%;
+    margin-left:11%; 
+     float: left;
+    /* margin-right: %; */
+
+ }
+
+
+main .colupna1 input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: block; 
+    width: 100%;
+
+} 
+
+
+main .colupna1 select{
+    display: block;
+    margin-top: 5px;
+    margin-bottom:20px;
+    width: 100%;
+   
+    
+}
+
+main .colupna2{
+    margin-top: 40px;
+    margin-right: 34%;
+    float: right;
+    width: 25%;
+}
+
+main .colupna2 select{
+    display: block;
+    margin-top: 5px;
+    margin-bottom:20px;
+    width: 100%;
+   
+    
+}
+
+
+.btnRegistrar{
+    
 }
