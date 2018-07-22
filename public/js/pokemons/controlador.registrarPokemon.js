@@ -37,6 +37,8 @@ function obtnerDatos() {
 
     infoPokemon.push(nNumeroPokedex, sNombrePokemon, sTipo1, sTipo2, urlFotoPokemon);
 
+    registrarPokemon(nNumeroPokedex, sNombrePokemon, sTipo1, sTipo2, urlFotoPokemon);
+
 
 
 }

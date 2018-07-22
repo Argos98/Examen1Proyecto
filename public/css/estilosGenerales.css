@@ -87,6 +87,18 @@ select{
  }
 
 
+ .btnRegistro {
+    background-color: #333333;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+
+
 
 
 

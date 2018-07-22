@@ -42,7 +42,7 @@ main .colupna1 input{
 main .colupna1 select{
     display: block;
     margin-top: 5px;
-    margin-bottom:20px;
+    margin-bottom:10px;
     width: 100%;
    
     
@@ -65,6 +65,22 @@ main .colupna2 select{
 }
 
 
-.btnRegistrar{
-    
+.imgP {
+    margin-left: 4%;
+    background-color: #333333;
+    border-radius: 3px;
+    border: none;
+    padding: 2px 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
 }
+
+
+.btnRegistro{
+    text-align: center;
+    margin-left: 34%;
+    margin-top: 15px;
+}
+

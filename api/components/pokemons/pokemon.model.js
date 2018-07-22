@@ -11,4 +11,4 @@ let pokemonSchema = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model('Pokemon', adminSchema);
+module.exports = mongoose.model('Pokemon', pokemonSchema);
