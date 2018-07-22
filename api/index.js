@@ -65,6 +65,7 @@ app.use(function (req, res, next) {
 // const usuarios = require('./components/users/users.route');
 
 const pokemon = require('./components/pokemons/pokemon.router');
+const entrenador = require('./components/entrenador/entrenador.router')
 
 
 /**
@@ -73,6 +74,7 @@ const pokemon = require('./components/pokemons/pokemon.router');
 // app.use('/api', usuarios);
 
 app.use('/api', pokemon);
+app.use('/api', entrenador)
 
 
 // Se guarda todo lo que se ha realizado

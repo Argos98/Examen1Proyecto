@@ -26,6 +26,9 @@ function obtnerDatos() {
     let sGenero = selectGenero.value;
       
     let urlFotoPokemon = imgUrl;
+
+    registrarEntrenador(sNumeroEntrendor,sNombreEntrenador,nEdad,sGenero,urlFotoPokemon);
+
     
 }
 
