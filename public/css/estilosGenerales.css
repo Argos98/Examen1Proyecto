@@ -2,6 +2,7 @@ html{
     background-color: #f5f5f5;
 }
 
+
 body header .barraSuperiorInfo{
 
     background: #333333;
@@ -21,14 +22,43 @@ body header .barraSuperiorInfo h2{
 
 body header .barraSuperiorInfo p{
     margin: 0 auto;
-    margin-right: 39%;
+    margin-right: 41%;
     padding-top: 14px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     float: right;
     color: #FBFCFC;
     
   
  
 }
+
+.logoPokemon img{
+    margin-left: 42%;
+    margin-top: 20px;
+    height: 80px;
+}
+
+
+ nav   {
+margin-top: 20px;
+background: #333333;
+
+padding: 15px;
+}
+
+a{
+    color: #f5f5f5;
+margin-right: 3.5%;
+margin-left: 4%;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+
+
+
+}
+
+
+
+
 

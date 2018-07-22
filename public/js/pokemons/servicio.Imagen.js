@@ -19,7 +19,7 @@ $(function() {
                  imgUrl = 'http://res.cloudinary.com/davidserrano/image/upload/' + id;
                  imgUrl = processImage(id);
                 console.log(imgUrl);
-                document.querySelector('#subirFoto').src = imgUrl;
+                document.querySelector('#imgPokemon').src = imgUrl;
                 // uploadButton.value = imgUrl;
 
                 

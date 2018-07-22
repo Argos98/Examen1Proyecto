@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="stylesheet" href="css/registrarPokemon.css">
 
 
 </head>
@@ -16,13 +17,33 @@
 <body>
 
     <header>
+        <div>
+            <div class="barraSuperiorInfo">
+                <h2>Bienvenido a Pokémon web</h2>
+                <p>¡Hazte con todos!</p>
+            </div>
 
-        <div class="barraSuperiorInfo">
-            <h2>Bienvenido a Pokémon web</h2>
-            <p>¡Hazte con todos!</p>
+            <div class="logoPokemon">
+                <img src="img/logo pokemon 2.png" alt="logoPokemon">
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="registrarPokemon.html">Registrar Pokemons</a>
+
+                    <a href="">Listar Pokemons</a>
+
+                    <a href="">Registrar Entrenadores</a>
+
+                    <a href="">Listar Entrenadores</a>
+
+                    <a href="">Capturar Pokémon</a>
+                </nav>
+<!-- <br>
+<br>
+<br> -->
+            </div>
         </div>
-
-
     </header>
 
     <main>
@@ -54,14 +75,19 @@
                 </div>
 
                 <div class="fotoPokemon">
-                    <div class="btnfotoPokemon"></div>
-                    <label for="">Subir foto del pokemon</label>
-                    <button type="button" id="subirFoto" class="btnImgErr">Subir imagen</button>
-
+                    <div class="btnfotoPokemon">
+                        <label for="">Subir foto del pokemon</label>
+                        <button type="button" id="subirFoto" class="btnImgErr">Subir imagen</button>
+                    </div>
 
                     <div class="boxInpt">
-                        <img alt="Foto" src="img/placeholder.png" class="imgErrorContainer" id="imgErr">
+                        <img alt="Foto" src="img/placeholder.png" class="imgPokemon" id="imgPokemon">
                     </div>
+                </div>
+
+                <div class="btnRegistrarPokemon">
+
+                    <button type="button" id="btnRegistrar">Registrar</button>
                 </div>
             </form>
 
