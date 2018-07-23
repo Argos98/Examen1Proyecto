@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="stylesheet" href="css/listarPokemons.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="barraSuperiorInfo">
+                <h2>Bienvenido a Pokémon web</h2>
+                <p>¡Hazte con todos!</p>
+            </div>
+
+            <div class="logoPokemon">
+                <img src="img/logo pokemon 2.png" alt="logoPokemon">
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="registrarPokemon.html">Registrar Pokémons</a>
+
+                    <a href="listarPokemons.html">Listar Pokémons</a>
+
+                    <a href="registrarEntrendar.html">Registrar Entrenadores</a>
+
+                    <a href="ListarEntrenadores.html">Listar Entrenadores</a>
+
+                    <a href="">Capturar Pokémon</a>
+                </nav>
+                <!-- <br>
+<br>
+<br> -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="tituloRegistro">
+            <h3>Lista Pokémons</h3>
+        </div>
+        <div class="tabla">
+            <table id="tblPokemons">
+                <thead>
+                    <th>Foto</th>
+                    <th>Número de entrenador</th>
+                    <th>Nombre del entrenador</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+
+
+
+
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="js/pokemons/servicio.listarPokemon.js"></script>
+    <script src="js/pokemons/controlador.listarPokemons.js"></script>
+
+</body>
+
+</html>
