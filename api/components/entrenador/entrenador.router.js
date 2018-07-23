@@ -7,9 +7,15 @@ router.route('/registrar_entrenador')
         pokemon.registrarentrenador(req, res);
     });
 
-    router.route('/listar_entrenador')
-    .get(function(req, res){
-    pokemon.listar(req, res);
-});
+router.route('/listar_entrenador')
+    .get(function (req, res) {
+        pokemon.listar(req, res);
+    });
 
-    module.exports = router;
+
+router.route('/agregar_Pokemon')
+    .post(function (req, res) {
+        pokemon.asignarPokemon(req, res);
+    });
+
+module.exports = router;

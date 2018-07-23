@@ -1,4 +1,4 @@
-function obtnereListaPokemons() {
+function obtnereListaEntrenadores() {
     let listaPokemons = [];
 
     let respuesta = '';

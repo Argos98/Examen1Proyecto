@@ -22,6 +22,8 @@ let buttonSubirFoto = document.querySelector('#subirFoto');
 function obtnerDatos() {
 
     let infoPokemon = [];
+    let error ;
+
 
     let nNumeroPokedex = inputNumeroPokedex.value;
 
@@ -40,9 +42,30 @@ function obtnerDatos() {
 
     infoPokemon.push(nNumeroPokedex, sNombrePokemon, sTipo1, sTipo2, urlFotoPokemon);
 
-    registrarPokemon(nNumeroPokedex, sNombrePokemon, sTipo1, sTipo2, urlFotoPokemon);
+    
+    error = validarCampos();
+
+    if (error == true) {
+        swal({
+            type: 'warning',
+            title: 'No se pudo registrar el Pokemon',
+            text: 'Por favor revise los campos en rojo',
+            confirmButtonText: 'Entendido'
+        });
+
+    } else {
+
+        registrarPokemon(nNumeroPokedex, sNombrePokemon, sTipo1, sTipo2, urlFotoPokemon);
+
+        swal({
+            type: 'success',
+            title: 'Registro exitoso',
+            text: 'El Pokemon se registró adecuadamente',
+            confirmButtonText: 'Entendido'
+        });
 
 
+    }
 
 }
 
@@ -72,4 +95,31 @@ function listarSelectTipo2() {
         select.options[i + 1] = new Option(tipo[i]);
 
     }
+}
+
+function validarCampos() {
+
+    let error;
+    let regexNumeros = /^[1234567890]+$/;
+    let listaPokemons = obtnereListaPokemons();
+
+
+    if (inputNumeroPokedex.value == '' || (regexNumeros.test(inputNumeroPokedex.value) == false)) {
+        for (let i = 0; i < listaPokemons.length; i++) {
+
+            if (listaPokemons[i]['numero_pokedex'] == (inputNumeroPokedex.value)) {
+                inputNumeroPokedex.classList.add('error_input');
+                error = true;
+            }
+        }
+
+
+
+    } else {
+        inputNumeroPokedex.classList.remove('error_input');
+        error = false
+    }
+
+    return error;
+
 }

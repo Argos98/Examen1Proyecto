@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilosGenerales.css">
-    <link rel="stylesheet" href="css/registrarEntrenador.css">
+    <link rel="stylesheet" href="css/asiganarPokemon.css">
 
 
 
@@ -50,60 +50,31 @@
     <main>
 
         <div class="tituloRegistro">
-            <h3>Registrar Entrenador</h3>
+            <h3>Asignar pokemon a entrenador</h3>
         </div>
         <div class="frmRegistrarEntrenador">
             <form action="">
 
-                <div class="colupna1">
+                <div class="nombreEntrenador">
+                    <label for="">Selcione un Entrenador</label>
+                    <select name="sltNombreE" id="sltNombreE">
 
-                    <div class="numeroEntrenador">
-                        <label for="">Numero de Entrenador</label>
-                        <input type="text" id="txtnumeroEntrenador">
-                    </div>
-
-                    <div class="nombreEntrenador">
-                        <label for="">Nombre del Entrenador</label>
-                        <input type="text" id="txtnombreEntrenador">
-
-                    </div>
-
-                    <div class="edad">
-                        <label for="">Edad</label>
-                        <input type="text" id="txtEdad">
-
-                    </div>
+                    </select>
 
                 </div>
 
-                <div class="colupna2">
+                <div class="nombrePokemon">
 
-                    <div class="genero">
-                        <label for="">Selecione su genero</label>
-                        <select name="sltGenero" id="sltGenero">
-                            <option value="default">Selecione uno</option>
-                            <option value="Masculina">Masculino</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="otors">Otros</option>
-                        </select>
+                    <label for="">Selecione un Pokémon</label>
+                    <select name="sltPokemon" id="sltPokemon"></select>
 
-                    </div>
-
-                    <div class="fotoPokemon">
-                        <div class="btnfotoPokemon">
-                            <label for="">Subir foto del Entrenador</label>
-                            <button type="button" id="subirFoto" class="imgP">Subir imagen</button>
-                        </div>
-
-                        <div class="boxInpt">
-                            <img alt="Foto" src="img/placeholder.png" class="imgPokemon" id="imgPokemon">
-                        </div>
-                    </div>
                 </div>
+
+
             </form>
             <div class="bontoRegistrar">
 
-                <button type="btnRegistrar" id="btnRegistrar" class="btnRegistro">Registrar</button>
+                <button type="btnRegistrar" id="btnAgregar" class="btnRegistro">Agregar</button>
             </div>
 
         </div>
@@ -118,8 +89,11 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
     <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="js/pokemons/servicio.listarPokemon.js"></script>
+
+    <script src="js/entrenador/servcio.listarEntrendores.js"></script>
     <script src="js/entrenador/servicio.registrarEntrendaor.js"></script>
-    <script src="js/entrenador/controlador.registrarEntrenador.js"></script>
+    <script src="js/entrenador/controlador.asignarPokemon.js"></script>
     <script src="js/servicio.Imagen.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 

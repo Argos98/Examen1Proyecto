@@ -32,3 +32,34 @@
 
     return respuesta;
 }
+
+
+function asignarPokemon(id,numeroPokedex,nombrePokemon) {
+    let respuesta = '';
+    // console.log(infoProyecto);
+    let peticion = $.ajax({
+        url: 'http://localhost:8080/api/agregar_Pokemon',
+        type: 'post',
+        contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+        dataType: 'json',
+        async: false,
+
+        data: {
+
+            _id: id,
+            numero_pokedex: numeroPokedex,
+            nombre_pokemon: nombrePokemon
+         
+        }
+    });
+
+    peticion.done(function (response) {
+        respuesta = response;
+    });
+
+    peticion.fail(function (response) {
+
+    });
+
+    return respuesta;
+}
