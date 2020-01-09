@@ -25,7 +25,9 @@ module.exports.registrarentrenador = function (req, res) {
             res.json({ success: true, msg: 'El entrenador se registró con éxito' });
 
         }
+ 
 
+ 
     });
 
 }
